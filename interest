@@ -1,0 +1,19 @@
+#interest rate r% yearly
+#a,r given, when does the investment double
+
+a=100
+r=5
+
+sum=a
+years=0
+
+track=True
+
+while track:
+    sum=a+(r/100)*sum
+    years+=1
+    
+    if ( sum==(2*a)):
+        track=False
+
+print(years)
